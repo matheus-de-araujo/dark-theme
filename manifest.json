@@ -1,8 +1,8 @@
 {
   "manifest_version": 2,
-  "name": "Dark mode / night reader",
+  "name": "Dark mode",
   "description": "Inverts page colors, showing white text on a dark background",
-  "version": "2020.4.9.0",
+  "version": "0.0.1",
   "background": {
     "scripts": ["background.js"],
     "persistent": false
@@ -21,8 +21,8 @@
   "browser_action": {
     "default_title": "Darken",
     "default_icon": {
-      "19": "icon-19.png",
-      "38": "icon-38.png"
+      "24": "icon-24.png",
+      "32": "icon-32.png"
     }
   },
 
@@ -33,7 +33,7 @@
 
   "icons": {
     "16": "icon-16.png",
-    "48": "icon-48.png",
+    "64": "icon-64.png",
     "128": "icon-128.png"
   },
 

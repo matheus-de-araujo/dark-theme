@@ -1,10 +1,3 @@
-/* (1) Invert colors, reduce contrast */
-html:not(.nodarken):not(.darkeni) {
-  filter: invert(100%) hue-rotate(180deg) brightness(75%) contrast(90%) !important;
-  background-image: none !important;
-  background-color: #fff !important;
-}
-
 /* (2) Invert colors */
 html:not(.nodarken).darkeni {
   filter: invert(100%) hue-rotate(180deg) brightness(100%) contrast(100%) !important;
@@ -12,77 +5,11 @@ html:not(.nodarken).darkeni {
   background-color: #fff !important;
 }
 
-/* (3) Reduce contrast */
-html.nodarken.darkeni {
-  filter: brightness(100%) contrast(75%) !important;
-}
-
-
-
-/* (1) Invert colors, reduce contrast */
-html:not(.nodarken):not(.darkeni) body {
-  background-image: none !important;
-  background-color: #fff !important;
-  color: #222 !important;
-}
-
 /* (2) Invert colors */
 html:not(.nodarken).darkeni body {
   background-image: none !important;
   background-color: #fff !important;
   color: #555 !important;
-}
-
-/* (3) Reduce contrast */
-html.nodarken.darkeni body {
-  background-color: #aaa !important;
-}
-
-
-
-/* (1) Invert colors, reduce contrast */
-html:not(.nodarken):not(.darkeni) img:not(.tex):not(.math):not(.mathdisplay):not(.math-display):not(.mwe-math-fallback-image-inline):not(.action):not(.actionIcon):not([src*="math"]):not([role="button"]):not([role="menu"]),
-html:not(.nodarken):not(.darkeni) canvas,
-html:not(.nodarken):not(.darkeni) embed,
-html:not(.nodarken):not(.darkeni) object,
-html:not(.nodarken):not(.darkeni) video,
-html:not(.nodarken):not(.darkeni) *[role="img"],
-html:not(.nodarken):not(.darkeni) iframe[src*="youtube"],
-html:not(.nodarken):not(.darkeni) iframe[src*="video"],
-html:not(.nodarken):not(.darkeni) iframe[src*="player"],
-html:not(.nodarken):not(.darkeni) div[aria-label="Embedded video"] {
-  filter: contrast(111%) brightness(100%) hue-rotate(-180deg) invert(100%) !important;
-}
-html:not(.nodarken):not(.darkeni) iframe[src*="disqus"] {
-  filter: initial !important;
-}
-html:not(.nodarken):not(.darkeni) *[role="img"] img:not(.tex):not(.math):not(.mathdisplay):not(.math-display):not(.mwe-math-fallback-image-inline):not(.action):not(.actionIcon):not([src*="math"]):not([role="button"]):not([role="menu"]),
-html:not(.nodarken):not(.darkeni) *[role="button"] img:not(.tex):not(.math):not(.mathdisplay):not(.math-display):not(.mwe-math-fallback-image-inline):not(.action):not(.actionIcon):not([src*="math"]):not([role="button"]):not([role="menu"]),
-html:not(.nodarken):not(.darkeni) *[role="menu"] img:not(.tex):not(.math):not(.mathdisplay):not(.math-display):not(.mwe-math-fallback-image-inline):not(.action):not(.actionIcon):not([src*="math"]):not([role="button"]):not([role="menu"]),
-html:not(.nodarken):not(.darkeni) *[role="img"] *[role="img"] {
-  filter: initial !important;
-}
-
-html:not(.nodarken):not(.darkeni) :-webkit-full-screen img:not(.tex):not(.math):not(.mathdisplay):not(.math-display):not(.mwe-math-fallback-image-inline):not(.action):not(.actionIcon):not([src*="math"]):not([role="button"]):not([role="menu"]),
-html:not(.nodarken):not(.darkeni) img:not(.tex):not(.math):not(.mathdisplay):not(.math-display):not(.mwe-math-fallback-image-inline):not(.action):not(.actionIcon):not([src*="math"]):not([role="button"]):not([role="menu"]):-webkit-full-screen,
-html:not(.nodarken):not(.darkeni) :-webkit-full-screen canvas,
-html:not(.nodarken):not(.darkeni) canvas:-webkit-full-screen,
-html:not(.nodarken):not(.darkeni) :-webkit-full-screen embed,
-html:not(.nodarken):not(.darkeni) embed:-webkit-full-screen,
-html:not(.nodarken):not(.darkeni) :-webkit-full-screen object,
-html:not(.nodarken):not(.darkeni) object:-webkit-full-screen,
-html:not(.nodarken):not(.darkeni) :-webkit-full-screen video,
-html:not(.nodarken):not(.darkeni) video:-webkit-full-screen,
-html:not(.nodarken):not(.darkeni) *[role="img"]:-webkit-full-screen,
-html:not(.nodarken):not(.darkeni) :-webkit-full-screen *[role="img"],
-html:not(.nodarken):not(.darkeni) :-webkit-full-screen iframe[src*="youtube"],
-html:not(.nodarken):not(.darkeni) iframe[src*="youtube"]:-webkit-full-screen,
-html:not(.nodarken):not(.darkeni) :-webkit-full-screen iframe[src*="video"],
-html:not(.nodarken):not(.darkeni) iframe[src*="video"]:-webkit-full-screen,
-html:not(.nodarken):not(.darkeni) :-webkit-full-screen iframe[src*="player"],
-html:not(.nodarken):not(.darkeni) iframe[src*="player"]:-webkit-full-screen
-{
-  filter: brightness(75%) contrast(90%) !important;
 }
 
 /* (2) Invert colors */
@@ -127,50 +54,6 @@ html:not(.nodarken).darkeni :-webkit-full-screen iframe[src*="player"],
 html:not(.nodarken).darkeni iframe[src*="player"]:-webkit-full-screen
 {
   filter: brightness(100%) contrast(100%) !important;
-}
-
-/* (3) Reduce contrast */
-html.nodarken.darkeni img:not(.tex):not(.math):not(.mathdisplay):not(.math-display):not(.mwe-math-fallback-image-inline):not(.action):not(.actionIcon):not([src*="math"]):not([role="button"]):not([role="menu"]),
-html.nodarken.darkeni canvas,
-html.nodarken.darkeni embed,
-html.nodarken.darkeni object,
-html.nodarken.darkeni video,
-html.nodarken.darkeni *[role="img"],
-html.nodarken.darkeni iframe[src*="youtube"],
-html.nodarken.darkeni iframe[src*="video"],
-html.nodarken.darkeni iframe[src*="player"] {
-  filter: contrast(133%) brightness(100%) !important;
-}
-html.nodarken.darkeni iframe[src*="disqus"] {
-  filter: initial !important;
-}
-html.nodarken.darkeni *[role="img"] img:not(.tex):not(.math):not(.mathdisplay):not(.math-display):not(.mwe-math-fallback-image-inline):not(.action):not(.actionIcon):not([src*="math"]):not([role="button"]):not([role="menu"]),
-html.nodarken.darkeni *[role="button"] img:not(.tex):not(.math):not(.mathdisplay):not(.math-display):not(.mwe-math-fallback-image-inline):not(.action):not(.actionIcon):not([src*="math"]):not([role="button"]):not([role="menu"]),
-html.nodarken.darkeni *[role="menu"] img:not(.tex):not(.math):not(.mathdisplay):not(.math-display):not(.mwe-math-fallback-image-inline):not(.action):not(.actionIcon):not([src*="math"]):not([role="button"]):not([role="menu"]),
-html.nodarken.darkeni *[role="img"] *[role="img"] {
-  filter: initial !important;
-}
-
-html.nodarken.darkeni :-webkit-full-screen img:not(.tex):not(.math):not(.mathdisplay):not(.math-display):not(.mwe-math-fallback-image-inline):not(.action):not(.actionIcon):not([src*="math"]):not([role="button"]):not([role="menu"]),
-html.nodarken.darkeni img:not(.tex):not(.math):not(.mathdisplay):not(.math-display):not(.mwe-math-fallback-image-inline):not(.action):not(.actionIcon):not([src*="math"]):not([role="button"]):not([role="menu"]):-webkit-full-screen,
-html.nodarken.darkeni :-webkit-full-screen canvas,
-html.nodarken.darkeni canvas:-webkit-full-screen,
-html.nodarken.darkeni :-webkit-full-screen embed,
-html.nodarken.darkeni embed:-webkit-full-screen,
-html.nodarken.darkeni :-webkit-full-screen object,
-html.nodarken.darkeni object:-webkit-full-screen,
-html.nodarken.darkeni :-webkit-full-screen video,
-html.nodarken.darkeni video:-webkit-full-screen,
-html.nodarken.darkeni :-webkit-full-screen iframe[src*="youtube"],
-html.nodarken.darkeni *[role="img"]:-webkit-full-screen,
-html.nodarken.darkeni :-webkit-full-screen *[role="img"],
-html.nodarken.darkeni iframe[src*="youtube"]:-webkit-full-screen,
-html.nodarken.darkeni :-webkit-full-screen iframe[src*="video"],
-html.nodarken.darkeni iframe[src*="video"]:-webkit-full-screen,
-html.nodarken.darkeni :-webkit-full-screen iframe[src*="player"],
-html.nodarken.darkeni iframe[src*="player"]:-webkit-full-screen
-{
-  filter: brightness(100%) contrast(75%) !important;
 }
 
 /* Site-specific rules */
@@ -284,19 +167,4 @@ html:not(.nodarken) * ::-webkit-scrollbar-track {
 
 html:not(.nodarken) * ::-webkit-scrollbar-thumb {
   background: #abc !important;
-}
-
-/* Light */
-
-html.nodarken.darkeni ::-webkit-scrollbar,
-html.nodarken.darkeni ::-webkit-scrollbar-track {
-  background: #def !important;
-}
-
-html.nodarken.darkeni ::-webkit-scrollbar-thumb {
-  background: #777 !important;
-}
-
-html.nodarken.darkeni ::-webkit-scrollbar-thumb:hover {
-  background-color: #3582ff !important;
 }

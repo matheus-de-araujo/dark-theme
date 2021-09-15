@@ -1,20 +1,12 @@
 function darkenSetState(state) {
   if (state === "1") {
     document.documentElement.classList.toggle("nodarken", false);
-    document.documentElement.classList.toggle("darkeni", false);
+    document.documentElement.classList.toggle("darkeni", true);
     chrome.runtime.sendMessage({state: "1"});
   } else if (state === "2") {
-    document.documentElement.classList.toggle("nodarken", false);
-    document.documentElement.classList.toggle("darkeni", true);
-    chrome.runtime.sendMessage({state: "2"});
-  } else if (state === "3") {
-    document.documentElement.classList.toggle("nodarken", true);
-    document.documentElement.classList.toggle("darkeni", true);
-    chrome.runtime.sendMessage({state: "3"});
-  } else if (state === "4") {
     document.documentElement.classList.toggle("nodarken", true);
     document.documentElement.classList.toggle("darkeni", false);
-    chrome.runtime.sendMessage({state: state});
+    chrome.runtime.sendMessage({state: "2"});
   }
 }
 
