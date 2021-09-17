@@ -132,6 +132,20 @@ html.darkeni .css-ob4lje {
   filter: invert(100%) hue-rotate(-180deg) !important;
 }
 
+/* Instagram */ 
+html.darkeni .ZwOlu,
+html.darkeni .sqdOP,
+html.darkeni .QBdPU,
+html.darkeni .RR-M-,
+html.darkeni .ZyFrc,
+html.darkeni .XrOey > a,
+html.darkeni .cq2ai,
+html.darkeni .QN629,
+html.darkeni .oevZr,
+html.darkeni .XrOey > div  {
+  filter: invert(100%) hue-rotate(-180deg) !important;
+}
+
 /* Scrollbars */
 
 html.darkeni ::-webkit-scrollbar-thumb{
